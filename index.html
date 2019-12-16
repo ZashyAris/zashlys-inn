@@ -13,7 +13,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    
+
     <link
       href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap"
       rel="stylesheet"
@@ -22,7 +22,7 @@
   <body>
     <div
       class="container-fluid"
-      style="font-family: 'Special Elite', cursive;
+      style=" text-align:center; font-family: 'Special Elite', cursive;
     font-size:25px;"
     >
       <div class="jumbotron">
@@ -33,208 +33,80 @@
             alt="Card image"
           />
           <div class="card-img-overlay">
-            <h1 class="card-title" style="font-size:100px;">ZASHLY'S INN</h1>
-            <p class="card-text">
+            <h1 class="card-title" style="font-size:100px; padding: 50px;">
+              ZASHLY'S INN
+            </h1>
+            <p class="card-text" style="font-size:40px;">
               Zashly's Inn is in town! Order now and get to enjoy amazing pizza
               at an amazing discount!
             </p>
-            <form>
-                <select required>
-                    <option value="type">FOUR SEASONS</option>
-                    <option value="type">BEEF STEAK & MUSHROOM</option>
-                    <option value="type">CLASSIC MARGHERITA</option>
-                    <option value="type">SWEET CHILLICHICKEN</option>
-                    <option value="type">SPICY CHICKEN</option>
-                    <option value="type">SWEET & SOUR CHICKEN</option>
-                </select>
-                    <select required>
-                            <option>Select size</option>
-                            <option value="1200">large --- 1200ksh</option>
-                            <option value="800">small --- 800ksh</option>
-                            <option value="1000">medium --- 1000ksh</option>
-                            <option value="1400">medium --- 1400ksh</option>
-                          </select>
-                          <select required>
-                            <option>Select Crust</option>
-                            <option value="50">Stuffed --- 50ksh</option>
-                            <option value="50">Crispy --- 50ksh</option>
-                            <option value="50">Glutter free --- 50ksh</option>
-                          </select>
-                          <select required >
-                            <option>Select Topping</option>
-                            <option value="50">Pepperon --- 50ksh</option>
-                            <option value="50">Onion --- 50ksh</option>
-                            <option value="50">Bacon --- 50ksh</option>
-                          </select>
-            
-                        <input type="submit" value="Check Out" id = "checkout" class="btn btn-primary">
+            <form class="form-group">
+              <select class="form-control" id="types" required>
+                <option value="type">SELECT TYPE</option>
+                <option value="type">FOUR SEASONS</option>
+                <option value="type">BEEF STEAK & MUSHROOM</option>
+                <option value="type">CLASSIC MARGHERITA</option>
+                <option value="type">SWEET CHILLICHICKEN</option>
+                <option value="type">SPICY CHICKEN</option>
+                <option value="type">SWEET & SOUR CHICKEN</option>
+              </select>
+
+              <div class="pizza form-group">
+                <div class="row">
+                  <div class="col-md-3">
+                    <select class="form-control" id="size" required>
+                      <option>Select size</option>
+                      <option value="1200">large --- 1200ksh</option>
+                      <option value="800">small --- 800ksh</option>
+                      <option value="1000">medium --- 1000ksh</option>
+                      <option value="1400">medium --- 1400ksh</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-3">
+                    <select class="form-control" id="crust" required>
+                      <option>Select Crust</option>
+                      <option value="50">Stuffed --- 50ksh</option>
+                      <option value="50">Crispy --- 50ksh</option>
+                      <option value="50">Glutter free --- 50ksh</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-control" id="topping" required>
+                      <option>Select Topping</option>
+                      <option value="50">Pepperon --- 50ksh</option>
+                      <option value="50">Onion --- 50ksh</option>
+                      <option value="50">Bacon --- 50ksh</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-3">
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="number"
+                      id="number"
+                      placeholder="Number of Pizza"
+                    />
+                  </div>
+                </div>
+                <div class="row pizza button">
+                  <div class="col-md-12">
+                    <input
+                      type="submit"
+                      value="Checkout"
+                      id="checkout"
+                      class="btn btn-success"
+                    />
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-md-4">
-              <form>
-            <div class="card">
-              <img src="https://bit.ly/2YNZo4E" />
-              <p>FOUR SEASONS</p>
-              <select required>
-                <option>Select size</option>
-                <option value="1200">large --- 1200ksh</option>
-                <option value="800">small --- 800ksh</option>
-                <option value="1000">medium --- 1000ksh</option>
-                <option value="1400">medium --- 1400ksh</option>
-              </select>
-              <select required>
-                <option>Select Crust</option>
-                <option value="50">Stuffed --- 50ksh</option>
-                <option value="50">Crispy --- 50ksh</option>
-                <option value="50">Glutter free --- 50ksh</option>
-              </select>
-              <select required >
-                <option>Select Topping</option>
-                <option value="50">Pepperon --- 50ksh</option>
-                <option value="50">Onion --- 50ksh</option>
-                <option value="50">Bacon --- 50ksh</option>
-              </select>
-
-            <input type="submit" value="Check Out" id = "checkout" class="btn btn-primary">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="https://bit.ly/2tjX5KR" />
-              <p>BEEF STEAK & MUSHROOM</p>
-              <select required >
-                <option>Select size</option>
-                <option value="1200">large --- 1200ksh</option>
-                <option value="800">small --- 800ksh</option>
-                <option value="1000">medium --- 1000ksh</option>
-                <option value="1400">medium --- 1400ksh</option>
-              </select>
-              <select required>
-                <option>Select Crust</option>
-                <option value="50">Stuffed --- 50ksh</option>
-                <option value="50">Crispy --- 50ksh</option>
-                <option value="50">Glutter free --- 50ksh</option>
-              </select>
-              <select required>
-                <option>Select Topping</option>
-                <option value="50">Pepperoni --- 50ksh</option>
-                <option value="50">Onion --- 50ksh</option>
-                <option value="50">Bacon --- 50ksh</option>
-              </select>
-              <input type="submit" value="Check Out" id = "checkout" class="btn btn-primary">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="https://bit.ly/36GjgJs" />
-              <p>CLASSIC MARGHERITA</p>
-              <select required>
-                <option>Select size</option>
-                <option value="1200">large --- 1200ksh</option>
-                <option value="800">small --- 800ksh</option>
-                <option value="1000">medium --- 1000ksh</option>
-                <option value="1400">medium --- 1400ksh</option>
-              </select>
-              <select required>
-                <option>Select Crust</option>
-                <option value="50">Stuffed --- 50ksh</option>
-                <option value="50">Crispy --- 50ksh</option>
-                <option value="50">Glutter free --- 50ksh</option>
-              </select>
-              <select required>
-                <option>Select Topping</option>
-                <option value="50">Pepperoni --- 50ksh</option>
-                <option value="50">Onion --- 50ksh</option>
-                <option value="50">Bacon --- 50ksh</option>
-              </select>
-              <input type="submit" value="Check Out" id = "checkout" class="btn btn-primary">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="https://bit.ly/2RVMVKA" />
-              <p>SWEET CHILLICHICKEN</p>
-              <select required>
-                <option>Select size</option>
-                <option value="1200">large --- 1200ksh</option>
-                <option value="800">small --- 800ksh</option>
-                <option value="1000">medium --- 1000ksh</option>
-                <option value="1400">medium --- 1400ksh</option>
-              </select>
-              <select required>
-                <option>Select Crust</option>
-                <option value="50">Stuffed --- 50ksh</option>
-                <option value="50">Crispy --- 50ksh</option>
-                <option value="50">Glutter free --- 50ksh</option>
-              </select>
-              <select required>
-                <option>Select Topping</option>
-                <option value="50">Pepperoni --- 50ksh</option>
-                <option value="50">Onion --- 50ksh</option>
-                <option value="50">Bacon --- 50ksh</option>
-              </select>
-              <input type="submit" value="Check Out" id = "checkout" class="btn btn-primary">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="https://bit.ly/34pbfYb" />
-              <p>SPICY CHICKEN</p>
-              <select required>
-                <option>Select size</option>
-                <option value="1200">large --- 1200ksh</option>
-                <option value="800">small --- 800ksh</option>
-                <option value="1000">medium --- 1000ksh</option>
-                <option value="1400">medium --- 1400ksh</option
-                >SPICY CHICKEN
-              </select>
-              <select required>
-                <option>Select Crust</option>
-                <option value="50">Stuffed --- 50ksh</option>
-                <option value="50">Crispy --- 50ksh</option>
-                <option value="50">Glutter free --- 50ksh</option>
-              </select>
-              <select required>
-                <option>Select Topping</option>
-                <option value="50">Pepperoni --- 50ksh</option>
-                <option value="50">Onion --- 50ksh</option>
-                <option value="50">Bacon --- 50ksh</option>
-              </select>
-              <input type="submit" value="Check Out" id = "checkout" class="btn btn-primary">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="https://bit.ly/2PKE8sm" />
-              <p>SWEET & SOUR CHICKEN</p>
-              <select required>
-                <option>Select size</option>
-                <option value="1200">large --- 1200ksh</option>
-                <option value="800">small --- 800ksh</option>
-                <option value="1000">medium --- 1000ksh</option>
-                <option value="1400">medium --- 1400ksh</option>
-              </select>
-              <select required>
-                <option>Select Crust</option>
-                <option value="50">Stuffed --- 50ksh</option>
-                <option value="50">Crispy --- 50ksh</option>
-                <option value="50">Glutter free --- 50ksh</option>
-              </select>
-              <select required>
-                <option>Select Topping</option>
-                <option value="50">Pepperoni --- 50ksh</option>
-                <option value="50">Onion --- 50ksh</option>
-                <option value="50">Bacon --- 50ksh</option>
-              </select>
-              <input type="submit" value="Check Out" id = "checkout" class="btn btn-primary">
-            </div>
-          </div>
-        </form>
-        </div> -->
       </div>
     </div>
   </body>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="index.js"></script>
 </html>

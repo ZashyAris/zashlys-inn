@@ -1,4 +1,1 @@
-$(Document).ready(function(){
- 
-})
-     
+$(Document).ready

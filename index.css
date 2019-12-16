@@ -1,3 +1,8 @@
-.row{
-    padding: 70px;
+.pizza {
+    padding: 100px 0px 0px 0px
+}
+.button{
+    text-align: center;
+    margin: 50px;
+    margin-left: 300px;
 }
