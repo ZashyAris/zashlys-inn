@@ -42,13 +42,13 @@
             </p>
             <form class="form-group">
               <select class="form-control" id="types" required>
-                <option value="type">SELECT TYPE</option>
-                <option value="type">FOUR SEASONS</option>
-                <option value="type">BEEF STEAK & MUSHROOM</option>
-                <option value="type">CLASSIC MARGHERITA</option>
-                <option value="type">SWEET CHILLICHICKEN</option>
-                <option value="type">SPICY CHICKEN</option>
-                <option value="type">SWEET & SOUR CHICKEN</option>
+                <option >SELECT TYPE</option>
+                <option value="350">FOUR SEASONS</option>
+                <option value="400">BEEF STEAK & MUSHROOM</option>
+                <option value="450">CLASSIC MARGHERITA</option>
+                <option value="500">SWEET CHILLICHICKEN</option>
+                <option value="550">SPICY CHICKEN</option>
+                <option value="600">SWEET & SOUR CHICKEN</option>
               </select>
 
               <div class="pizza form-group">
@@ -96,6 +96,7 @@
                       type="submit"
                       value="Checkout"
                       id="checkout"
+                      onclick="getPizza()"
                       class="btn btn-success"
                     />
                   </div>
