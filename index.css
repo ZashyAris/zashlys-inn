@@ -3,7 +3,8 @@
 }
 nav{
     font-size: 30px;
-    width:100%; 
+    width:100%;
+ 
 }
 nav ul {
     text-align: right;
@@ -17,9 +18,8 @@ nav>ul>li>a {
 }
 .button{
     text-align: center;
-    margin: 50px;
     margin-left: 300px;
 }
-footer{
+#footer{
     padding-top:50px;
 }
