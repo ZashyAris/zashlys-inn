@@ -15,8 +15,6 @@ This is a pizza website where you can order for pizza at home with your choice o
 - git clone https://github.com/ZashyAris/zashlys-inn
 - cd zashlysinn
 - use atom . or code . to open the clone repo on Atom or VS-code respectively
-## Known Bugs
-My website is not responsive.
 ## Support and contact details
 - My contacts:+254793933082
 - email:sharonatieno080@gmail.com
