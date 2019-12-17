@@ -1,4 +1,6 @@
 # ZASHLY'S INN
+## link to the site
+https://zashyaris.github.io/zashlys-inn/
 ## Author
 Sharon Atieno Auma
 ## Description 
